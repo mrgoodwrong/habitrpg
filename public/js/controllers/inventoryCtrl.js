@@ -159,7 +159,7 @@ habitrpg.controller("InventoryCtrl", ['$rootScope', '$scope', 'User', 'API_URL',
 
     $scope.chooseMount = function(egg, potion) {
       var mount = egg + '-' + potion;
-      User.set('items.currentMount', (user.items.currentMount == mount) ? null : mount);
+      User.set('items.currentMount', (user.items.currentMount == mount) ? '' : mount);
     }
 
   }
